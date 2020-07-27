@@ -1,0 +1,13 @@
+<html>
+  <head>
+    <title>Gossip numéro <%= params['id'] %></title>
+  </head>
+  <body>
+    <h1>Vue d'un potin - Potin numéro <%= params['id'] %></h1>
+    <p>
+      Voici la page du potin numéro <%= params['id'] %> <br>
+      Son auteur : <%= gossip.author %> <br>
+      Contenu du potin : <%= gossip.content %>
+    </p>
+  </body>
+</html>

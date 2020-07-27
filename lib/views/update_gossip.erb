@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>Mise à jour d'un potin</title>
+  </head>
+  <body>
+    <h1>MODIFICATION POTIN</h1>
+    <p>Mettez à jour le potin suivant grâce au formulaire :</p>
+    <p>
+      Mise à jour du potin numéro <%= params['id'] %> <br>
+      Son auteur : <%= gossip.author %> <br>
+      Contenu du potin : <%= gossip.content %>
+    </p>
+    <h2>Formulaire de mise à jour :</h2>
+
+    <form action='/gossips/update/<%= params['id'] %>' method='POST'>
+      Saisi ici ton nom :  <input type='text' name='gossip_author'/><br/>
+      Balance ton potin : <input type='text' name='gossip_content'/><br/>
+      <input type='submit'/>
+    </form>
+  </body>
+</html>
